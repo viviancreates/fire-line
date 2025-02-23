@@ -1,11 +1,41 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id                     :integer          not null, primary key
+#  email                  :string           default("")
+#  encrypted_password     :string           default(""), not null
+#  first_name             :string
+#  last_name              :string
+#  username               :string           not null
+#  phone_number           :string
+#  reset_password_token   :string
+#  reset_password_sent_at :datetime
+#  remember_created_at    :datetime
+#  created_at             :datetime         not null
+#  updated_at             :datetime         not null
+#
+
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 # This model initially had no columns defined. If you add columns to the
 # model remove the "{}" from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
-#
-two: {}
-# column: value
+one:
+  email: "userone@example.com"
+  first_name: "User"
+  last_name: "One"
+  username: "userone"
+  encrypted_password: <%= Devise::Encryptor.digest(User, "password") %>
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
+
+two:
+  email: "usertwo@example.com"
+  first_name: "User"
+  last_name: "Two"
+  username: "usertwo"
+  encrypted_password: <%= Devise::Encryptor.digest(User, "password") %>
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
