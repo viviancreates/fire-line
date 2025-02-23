@@ -1,0 +1,2 @@
+class AirQualityReading < ApplicationRecord
+end

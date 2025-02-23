@@ -1,0 +1,32 @@
+<%= form_with(model: air_quality_reading) do |form| %>
+  <% if air_quality_reading.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(air_quality_reading.errors.count, "error") %> prohibited this air_quality_reading from being saved:</h2>
+
+      <ul>
+        <% air_quality_reading.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :timestamp, style: "display: block" %>
+    <%= form.datetime_field :timestamp %>
+  </div>
+
+  <div>
+    <%= form.label :aqi, style: "display: block" %>
+    <%= form.number_field :aqi %>
+  </div>
+
+  <div>
+    <%= form.label :source, style: "display: block" %>
+    <%= form.text_field :source %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

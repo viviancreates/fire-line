@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @air_quality_reading %>
+
+<div>
+  <%= link_to "Edit this air quality reading", edit_air_quality_reading_path(@air_quality_reading) %> |
+  <%= link_to "Back to air quality readings", air_quality_readings_path %>
+
+  <%= button_to "Destroy this air quality reading", @air_quality_reading, method: :delete %>
+</div>

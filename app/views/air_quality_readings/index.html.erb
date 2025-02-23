@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Air quality readings" %>
+
+<h1>Air quality readings</h1>
+
+<div id="air_quality_readings">
+  <% @air_quality_readings.each do |air_quality_reading| %>
+    <%= render air_quality_reading %>
+    <p>
+      <%= link_to "Show this air quality reading", air_quality_reading %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New air quality reading", new_air_quality_reading_path %>

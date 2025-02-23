@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Symptom logs" %>
+
+<h1>Symptom logs</h1>
+
+<div id="symptom_logs">
+  <% @symptom_logs.each do |symptom_log| %>
+    <%= render symptom_log %>
+    <p>
+      <%= link_to "Show this symptom log", symptom_log %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New symptom log", new_symptom_log_path %>

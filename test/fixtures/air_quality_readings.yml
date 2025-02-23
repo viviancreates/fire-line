@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  timestamp: 2025-02-23 15:05:39
+  aqi: 1
+  source: MyString
+
+two:
+  timestamp: 2025-02-23 15:05:39
+  aqi: 1
+  source: MyString

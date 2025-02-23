@@ -1,0 +1,32 @@
+<%= form_with(model: report_recipient) do |form| %>
+  <% if report_recipient.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(report_recipient.errors.count, "error") %> prohibited this report_recipient from being saved:</h2>
+
+      <ul>
+        <% report_recipient.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :report_id, style: "display: block" %>
+    <%= form.text_field :report_id %>
+  </div>
+
+  <div>
+    <%= form.label :email, style: "display: block" %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div>
+    <%= form.label :role, style: "display: block" %>
+    <%= form.text_field :role %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

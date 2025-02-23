@@ -1,0 +1,2 @@
+module SymptomLogsHelper
+end

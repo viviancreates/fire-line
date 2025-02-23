@@ -1,0 +1,11 @@
+<% content_for :title, "New air quality reading" %>
+
+<h1>New air quality reading</h1>
+
+<%= render "form", air_quality_reading: @air_quality_reading %>
+
+<br>
+
+<div>
+  <%= link_to "Back to air quality readings", air_quality_readings_path %>
+</div>
