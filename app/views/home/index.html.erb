@@ -16,10 +16,12 @@
         A health tracking platform designed for agricultural workers affected by wildfires. Log symptoms, access vital reports, and share with medical professionals.
       </p>
 
+      <%= link_to "Stay Updated", new_prospect_path, class: "cta-button" %>
+
       <% if user_signed_in? %>
         <%= link_to "Dashboard", dashboard_path, class: "cta-button" %>
       <% else %>
-        <%= link_to "Get Started", new_user_registration_path, class: "cta-button" %>
+        <%= link_to "Get Started", new_user_registration_path, class: "cta-button hidden" %>
       <% end %>
     </div>
   </header>

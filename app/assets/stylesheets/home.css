@@ -56,6 +56,10 @@
     margin-bottom: 20px;
   }
   
+  .hidden {
+    display: none !important;
+  }
+  
   .cta-button {
     color: white;
     background-color: #2A9D8F;
