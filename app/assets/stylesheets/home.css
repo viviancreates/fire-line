@@ -145,7 +145,7 @@
     font-size: 1rem;
     font-weight: 600;
     padding: 15px;
-    border-radius: 6px;
+    border-radius: 8px;
     text-align: left;
     transition: all 0.3s ease;
   }
@@ -154,6 +154,8 @@
     background-color: #2A9D8F;
     color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
   
   .accordion-button:hover {
@@ -165,6 +167,9 @@
   .accordion-item {
     margin-bottom: 15px;
     border: none;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #E9C46A;
   }
   
   .accordion-body {
@@ -175,6 +180,8 @@
     padding: 20px;
     border-radius: 6px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
   }
   
   body.landing-page .social-proof {

@@ -1,4 +1,10 @@
 <body class="landing-page">
+  <!-- Language Toggle -->
+  <div class="language-toggle">
+    <%= link_to "English", url_for(locale: :en), class: "lang-button" %>
+    <%= link_to "Español", url_for(locale: :es), class: "lang-button" %>
+  </div>
+
   <header class="hero">
     <div class="hero-content">
       <h1 class="fireline-logo">
@@ -11,101 +17,70 @@
         <span class="n">N</span>
         <span class="e2">E</span>
       </h1>
-      <h2>Track Wildfire Exposure, Protect Your Health</h2>
-      <p class="description">
-        A health tracking platform designed for agricultural workers affected by wildfires. Log symptoms, access vital reports, and share with medical professionals.
-      </p>
+      <h2><%= auto_translate('header.tagline') %></h2>
+      <p class="description"><%= auto_translate('header.description') %></p>
 
-      <%= link_to "Stay Updated", new_prospect_path, class: "cta-button" %>
+      <%= link_to auto_translate('cta.stay_updated'), new_prospect_path, class: "cta-button" %>
 
       <% if user_signed_in? %>
-        <%= link_to "Dashboard", dashboard_path, class: "cta-button" %>
+        <%= link_to auto_translate('cta.dashboard'), dashboard_path, class: "cta-button" %>
       <% else %>
-        <%= link_to "Get Started", new_user_registration_path, class: "cta-button hidden" %>
+        <%= link_to auto_translate('cta.get_started'), new_user_registration_path, class: "cta-button hidden" %>
       <% end %>
     </div>
   </header>
 
   <section class="works" id="how-it-works">
-    <h2>How FireLine Works</h2>
+    <h2><%= auto_translate('sections.how_it_works') %></h2>
     <div class="steps">
       <div class="step">
-        <h3>Create an Account</h3>
-        <p>Sign up and start tracking your wildfire-related symptoms.</p>
+        <h3><%= auto_translate('steps.create_account') %></h3>
+        <p><%= auto_translate('steps.create_account_desc') %></p>
       </div>
       <div class="step">
-        <h3>Log Health Data</h3>
-        <p>Record symptoms and environmental conditions affecting your well-being.</p>
+        <h3><%= auto_translate('steps.log_health_data') %></h3>
+        <p><%= auto_translate('steps.log_health_data_desc') %></p>
       </div>
       <div class="step">
-        <h3>Generate Reports</h3>
-        <p>Automatically create reports to share with doctors or advocacy groups.</p>
+        <h3><%= auto_translate('steps.generate_reports') %></h3>
+        <p><%= auto_translate('steps.generate_reports_desc') %></p>
       </div>
       <div class="step">
-        <h3>Stay Informed</h3>
-        <p>Get alerts on air quality, wildfire status, and health guidance.</p>
+        <h3><%= auto_translate('steps.stay_informed') %></h3>
+        <p><%= auto_translate('steps.stay_informed_desc') %></p>
       </div>
       <div class="step">
-        <h3>Take Action</h3>
-        <p>Use your reports to advocate for better protections and medical care.</p>
+        <h3><%= auto_translate('steps.take_action') %></h3>
+        <p><%= auto_translate('steps.take_action_desc') %></p>
       </div>
     </div>
   </section>
 
   <section class="faq">
-    <h2 class="text-center">Frequently Asked Questions</h2>
-    <div class="accordion" id="faqAccordion">
+  <h2 class="text-center"><%= auto_translate('faq.title') %></h2>
+  <div class="accordion" id="faqAccordion">
+    <% (1..6).each do |n| %>
       <div class="accordion-item">
         <h3 class="accordion-header">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-            What is FireLine?
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<%= n %>">
+            <%= auto_translate("faq.question#{n}") %>
           </button>
         </h3>
-        <div id="collapseOne" class="accordion-collapse collapse show">
+        <div id="collapse<%= n %>" class="accordion-collapse collapse">
           <div class="accordion-body">
-            FireLine is a health tracking tool designed for individuals exposed to wildfire smoke, particularly agricultural workers. The platform helps users document symptoms and access critical health data.
+            <%= auto_translate("faq.answer#{n}") %>
           </div>
         </div>
       </div>
-
-      <div class="accordion-item">
-        <h3 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-            How does FireLine help?
-          </button>
-        </h3>
-        <div id="collapseTwo" class="accordion-collapse collapse">
-          <div class="accordion-body">
-            FireLine enables users to track symptoms, generate medical reports, receive wildfire exposure alerts, and access health resources to improve safety and advocacy efforts.
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <h3 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
-            Who should use FireLine?
-          </button>
-        </h3>
-        <div id="collapseThree" class="accordion-collapse collapse">
-          <div class="accordion-body">
-            FireLine is designed for farmworkers, first responders, outdoor laborers, and residents in wildfire-prone areas who need to monitor health impacts and share data with healthcare providers.
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="social-proof">
-    <h2>User Stories</h2>
-    <blockquote>"FireLine helped me track my symptoms and gave me reports to show my doctor. Now, I'm getting the care I need." - Example, Agricultural Worker</blockquote>
-  </section>
-
+    <% end %>
+  </div>
+</section>
+  
   <footer>
     <nav>
       <ul class="footer-links">
-        <li><a href="mailto:viviandavilacodes@gmail.com">Contact</a></li>
-        <li><a href="https://dev.to/viviancreates">Blog</a></li>
+        <li><a href="mailto:viviandavilacodes@gmail.com"><%= auto_translate('contact') %></a></li>
+        <li><a href="https://dev.to/viviancreates"><%= auto_translate('blog') %></a></li>
       </ul>
     </nav>
   </footer>

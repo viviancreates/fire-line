@@ -1,0 +1,38 @@
+es:
+  header:
+    tagline: "Monitorea la exposición al humo de incendios forestales, protege tu salud"
+    description: "Una plataforma de seguimiento de salud diseñada para trabajadores agrícolas afectados por incendios forestales."
+  cta:
+    stay_updated: "Mantente informado"
+    get_started: "Comenzar"
+    dashboard: "Panel de control"
+  sections:
+    how_it_works: "Cómo funciona FireLine"
+    faq: "Preguntas Frecuentes"
+  steps:
+    create_account: "Crea una cuenta"
+    create_account_desc: "Regístrate y empieza a monitorear tus síntomas."
+    log_health_data: "Registra datos de salud"
+    log_health_data_desc: "Documenta síntomas y condiciones ambientales."
+    generate_reports: "Genera informes"
+    generate_reports_desc: "Crea informes automáticos para compartir con médicos."
+    stay_informed: "Mantente informado"
+    stay_informed_desc: "Recibe alertas de calidad del aire y salud."
+    take_action: "Toma acción"
+    take_action_desc: "Usa los informes para mejorar la protección y atención médica."
+  faq:
+    title: "Preguntas Frecuentes"
+    question1: "¿Qué es FireLine?"
+    answer1: "FireLine es una herramienta de seguimiento de salud diseñada para personas expuestas al humo de incendios forestales, especialmente trabajadores agrícolas."
+    question2: "¿Cómo ayuda FireLine?"
+    answer2: "FireLine permite a los usuarios registrar síntomas, generar informes médicos, recibir alertas de exposición a incendios forestales y acceder a recursos de salud."
+    question3: "¿Quién debería usar FireLine?"
+    answer3: "FireLine está diseñado para trabajadores agrícolas, socorristas, trabajadores al aire libre y residentes en áreas propensas a incendios forestales."
+    question4: "¿Cómo se protege mi información?"
+    answer4: "Nos tomamos muy en serio la privacidad de los datos. FireLine cifra su información de salud y no la comparte sin su consentimiento."
+    question5: "¿Puedo recibir alertas sobre la calidad del aire y los incendios forestales?"
+    answer5: "¡Sí! FireLine proporciona actualizaciones en tiempo real sobre la calidad del aire y alertas de incendios forestales según su ubicación."
+    question6: "¿Qué síntomas debo rastrear?"
+    answer6: "Puede registrar síntomas como tos, dificultad para respirar, dolores de cabeza e irritación ocular, así como condiciones ambientales que afectan su salud."
+  contact: "Contacto"
+  blog: "Blog"
