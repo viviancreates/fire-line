@@ -11,5 +11,13 @@ module ActiveSupport
     fixtures :all
 
     # Add more helper methods to be used by all tests here...
+
+    include Devise::Test::IntegrationHelpers
+
+    # Sign in a test user before each test
+    setup do
+      @user = users(:one) # Ensure you have a user fixture
+      sign_in @user
+    end
   end
 end

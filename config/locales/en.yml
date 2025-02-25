@@ -28,4 +28,41 @@
 #       enabled: "ON"
 
 en:
-  hello: "Hello world"
+en:
+  header:
+    tagline: "Track Wildfire Exposure, Protect Your Health"
+    description: "A health tracking platform designed for agricultural workers affected by wildfires."
+  cta:
+    stay_updated: "Stay Updated"
+    get_started: "Get Started"
+    dashboard: "Dashboard"
+  sections:
+    how_it_works: "How FireLine Works"
+    faq: "Frequently Asked Questions"
+  steps:
+    create_account: "Create an Account"
+    create_account_desc: "Sign up and start tracking your wildfire-related symptoms."
+    log_health_data: "Log Health Data"
+    log_health_data_desc: "Record symptoms and environmental conditions affecting your well-being."
+    generate_reports: "Generate Reports"
+    generate_reports_desc: "Automatically create reports to share with doctors or advocacy groups."
+    stay_informed: "Stay Informed"
+    stay_informed_desc: "Get alerts on air quality, wildfire status, and health guidance."
+    take_action: "Take Action"
+    take_action_desc: "Use your reports to advocate for better protections and medical care."
+  faq:
+    title: "Frequently Asked Questions"
+    question1: "What is FireLine?"
+    answer1: "FireLine is a health tracking tool designed for individuals exposed to wildfire smoke, particularly agricultural workers."
+    question2: "How does FireLine help?"
+    answer2: "FireLine enables users to track symptoms, generate medical reports, receive wildfire exposure alerts, and access health resources to improve safety and advocacy efforts."
+    question3: "Who should use FireLine?"
+    answer3: "FireLine is designed for farmworkers, first responders, outdoor laborers, and residents in wildfire-prone areas who need to monitor health impacts and share data with healthcare providers."
+    question4: "How is my data protected?"
+    answer4: "We take data privacy seriously. FireLine encrypts your health data and does not share it without your consent."
+    question5: "Can I receive alerts about air quality and wildfires?"
+    answer5: "Yes! FireLine provides real-time air quality updates and wildfire alerts based on your location."
+    question6: "What symptoms should I track?"
+    answer6: "You can track symptoms like coughing, shortness of breath, headaches, and eye irritation, as well as environmental conditions affecting your health."
+  contact: "Contact"
+  blog: "Blog"
