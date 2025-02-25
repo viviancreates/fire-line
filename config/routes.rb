@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root to: "home#index"
+  resources :prospects, only: [:new, :create]
   resources :report_recipients
   resources :reports
   resources :air_quality_readings
