@@ -81,6 +81,7 @@ test:
 production:
   primary: &primary_production
     <<: *default
+    url: <%= ENV['DATABASE_URL'] 
     database: fire_line_production
     username: fire_line
     password: <%= ENV["FIRE_LINE_DATABASE_PASSWORD"] %>
